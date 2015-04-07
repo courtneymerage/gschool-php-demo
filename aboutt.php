@@ -1,37 +1,12 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <!-- Adding the Page Title from the index, about, or contact pages -->
-    <title>About | Your Name Here</title>
+<?php  $pageTitle = "About";
 
-    <!-- Tell the browser to render the view width correctly -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Link our stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
+?>
 
 
-<body id="about">
+<?php include 'header.php'; ?>
 
-    <header>
-        <div class="row clearfix">
-
-            <!-- Our Logo -->
-            <a href="index.html">
-                <img class="logo" src="images/logo.png" />
-            </a>
-
-            <!-- Our Site Navigation -->
-            <nav>
-                <a href="index.php">Home</a>
-                <a href="aboutt.php">About</a>
-                <a href="contactt.php">Contact</a>
-            </nav>
-
-        </div>
-    </header>
+<body id="<?php echo $pageID; ?>">
     
     <div class="row clearfix">
     
@@ -70,18 +45,4 @@
     </div>
         </div>
     
-    <footer>
-        <!-- Out Site Navigation -->
-        <nav>
-            <a href="index.php">Home</a>
-            <a href="aboutt.php">About</a>
-            <a href="contactt.php">Contact</a>
-        </nav>
-
-        <!-- Site Copyright -->
-        <p>Copyright 2015 - Your Name Here</p>
-    </footer>
-
-</body>
-
-</html>
+  <?php include 'footer.php'; ?>
